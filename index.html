@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>美洲杯预测</title>
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <h1>Hello Github Pages</h1>
-    <script src="./index.js"></script>
+<div class="container">
+    <h1>美洲杯预测</h1>
+    <div class="prediction-form">
+        <label for="team">选择你支持的球队:</label>
+        <select id="team">
+            <option value="argentina">阿根廷</option>
+            <option value="brazil">巴西</option>
+            <option value="chile">智利</option>
+            <option value="colombia">哥伦比亚</option>
+            <!-- 可以添加更多选项 -->
+        </select>
+        <button onclick="predictWinner()">预测</button>
+    </div>
+    <div id="prediction-result" class="prediction-result">
+        <!-- 这里显示预测结果 -->
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
-
 </html>
-
